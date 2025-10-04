@@ -1,0 +1,14 @@
+name: 'PR Validator'
+description: 'Validates PR branch name, commit messages, PR body and debug log'
+runs:
+  using: 'node20'
+  main: 'index.js'
+
+inputs:
+  github-token:
+    description: 'GitHub token'
+    required: true
+
+branding:
+  color: 'blue'
+  icon: 'check-circle'
